@@ -1,6 +1,6 @@
 <template>
   <div class="page-body-main">
-    <div class="side-bar-wrapper">
+    <div :class="['side-bar-wrapper', positionType]">
       <div class="video-content">
         <img
           src="https://img-c.udemycdn.com/course/480x270/3524274_d5ed_5.jpg"
@@ -15,9 +15,7 @@
         </div>
         <div class="text">预览本课程</div>
       </div>
-      <div :class="[
-          'perchase-section',
-        ]"
+      <div class="perchase-section"
         ref="perchaseSection"
       >
         <div class="cost">$99</div>
@@ -83,28 +81,69 @@ import {
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const perchaseSection = ref(null);
-const isFixed = ref(false);
+const positionType = ref('box-normal'); // 'normal', 'fixed', 'bottom'
 
 const checkPosition = () => {
   if (!perchaseSection.value) return;
+  
   const rect = perchaseSection.value.getBoundingClientRect();
   const parentRect = perchaseSection.value.parentElement.getBoundingClientRect();
+  const footer = document.querySelector('.footer');
+  const banner = document.querySelector('.banner'); 
 
-  if (parentRect.bottom <= window.innerHeight) {
-    isFixed.value = false;
-    return;
+  
+  const buffer = 50;
+  const currentScrollY = window.scrollY;
+  const lastScrollY = ref(currentScrollY);
+
+  if (banner) {
+    const bannerRect = banner.getBoundingClientRect();
+    if (bannerRect.bottom > 0) {
+      positionType.value = 'box-normal';
+      return;
+    }
   }
 
-  isFixed.value = rect.top <= 0;
+  if (footer) {
+    const footerRect = footer.getBoundingClientRect();
+    if (footerRect.top <= window.innerHeight) {
+      if (positionType.value !== 'box-bottom') {
+        positionType.value = 'box-bottom';
+      }
+      return;
+    }
+  }
+
+  if (Math.abs(rect.top) > buffer) {
+    if (rect.top < -buffer && positionType.value !== 'box-fixed') {
+      positionType.value = 'box-fixed';
+    } else if (rect.top > buffer && positionType.value !== 'box-normal') {
+      positionType.value = 'box-normal';
+    }
+  }
+
+  lastScrollY.value = currentScrollY;
+};
+
+function throttle(fn, delay) {
+  let timer = null;
+  return function() {
+    if (timer) return;
+    timer = setTimeout(() => {
+      fn.apply(this, arguments);
+      timer = null;
+    }, delay);
+  }
 }
+const throttledCheck = throttle(checkPosition, 100); 
+
 onMounted(() => {
-  window.addEventListener('scroll', checkPosition);
-  
+  window.addEventListener('scroll', throttledCheck);
   checkPosition();
 });
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', checkPosition);
+  window.removeEventListener('scroll', throttledCheck);
 });
 
 </script>
@@ -119,7 +158,28 @@ onUnmounted(() => {
     box-sizing: border-box;
     box-shadow: 0 2px 4px rgba(6, 17, 118, 0.08), 0 4px 12px rgba(6, 17, 118, 0.08);
     background-color: #fff;
-
+    background-color: #fff;
+    transition: transform 0.3s ease, top 0.3s ease;
+    transform: translateZ(0);
+    will-change: transform, position;
+    &.box-normal {
+      transform: translateY(0);
+    }
+    &.box-fixed {
+      position: fixed;
+      top: 1.6rem;
+      z-index: 3;
+      transform: translateY(0);
+      .video-content{
+        display: none;
+      }
+    }
+    &.box-bottom {
+      position: absolute;
+      bottom: 1.6rem;
+      top: auto;
+      transform: translateY(0);
+    }
   }
   .video-content {
     position: relative;
@@ -159,9 +219,6 @@ onUnmounted(() => {
   }
   .perchase-section {
     padding: 2.4rem;
-    &.isFixed {
-      
-    }
   }
   .cost {
     margin-bottom: 0.8rem;
