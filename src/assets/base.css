@@ -63,6 +63,19 @@ a {
   text-decoration: none;
   
 }
+b {
+  font-weight: 700;
+}
+ul {
+  padding: 0;
+}
+input {
+  border: none;
+  border-radius: 0.4rem;
+  &:focus-visible {
+    outline: none;
+  }
+}
 
 /* body {
   min-height: 100vh;

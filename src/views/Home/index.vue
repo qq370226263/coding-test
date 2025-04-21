@@ -18,9 +18,8 @@ import PageBody from './components/page-body.vue';
 </script>
 
 <style scoped>
-.home {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.landing-page {
+  position: relative;
 }
+
 </style> 

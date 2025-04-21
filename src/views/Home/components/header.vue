@@ -159,11 +159,7 @@ import { GlobalOutlined, SearchOutlined, ShoppingCartOutlined, CloseOutlined } f
   width: 100%;
   flex: 1;
   width: 100%;
-  border: none;
   margin-right: 2rem;
-  &:focus-visible {
-    outline: none;
-  }
 }
 
 </style>
