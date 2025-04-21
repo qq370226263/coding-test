@@ -58,7 +58,13 @@
   font-weight: normal;
 }
 
-body {
+a {
+  color: #303141;
+  text-decoration: none;
+  
+}
+
+/* body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
@@ -83,4 +89,4 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
