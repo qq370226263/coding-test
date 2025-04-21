@@ -1,5 +1,6 @@
 <template>
   <Header />
+  <FixedHeader/>
   <div class="landing-page">
     <Banner/>
     <SideBar/>
@@ -14,6 +15,7 @@ import Footer from './components/footer.vue';
 import Banner from './components/banner.vue';
 import SideBar from './components/side-bar.vue';
 import PageBody from './components/page-body.vue';
+import FixedHeader from './components/fixed-header.vue';
 // 组件逻辑可以在这里添加
 </script>
 

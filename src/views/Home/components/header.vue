@@ -110,7 +110,9 @@ import { GlobalOutlined, SearchOutlined, ShoppingCartOutlined, CloseOutlined } f
   align-items: center;
   gap: 1.6rem;
   height: 7.2rem;
-  
+  z-index: 1010;
+  position: relative;
+  background-color: #fff;
   :deep(.anticon) {
     font-size: 1.6rem;
   }

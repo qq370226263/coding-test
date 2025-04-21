@@ -176,7 +176,7 @@ onUnmounted(() => {
     }
     &.box-bottom {
       position: absolute;
-      bottom: 1.6rem;
+      bottom: 4.8rem;
       top: auto;
       transform: translateY(0);
     }

@@ -27,7 +27,7 @@
           </a>
           <div>@2025 Udemy,Inc.</div>
         </div>
-        <div class="cookie-setting link">
+        <div class="cookie-setting">
           Cookie 设置
         </div>
         <div class="i18n-setting">
@@ -98,7 +98,7 @@ import { GlobalOutlined } from '@ant-design/icons-vue';
   gap: 2.4rem;
   justify-content: space-between;
 }
-.link {
+.cookie-setting {
   &:hover {
     cursor: pointer;
     text-decoration: underline;

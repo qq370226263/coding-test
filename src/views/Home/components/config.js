@@ -242,3 +242,233 @@ export const courseList = [
     ]
   }
 ]
+
+export const lessons = [
+  {
+    title: "Bitcoin - A Comprehensive Guide",
+    image: 'https://img-c.udemycdn.com/course/100x100/327788_60ce_4.jpg',
+    totalHour: "2.5",
+    updateTime: "2015/1",
+    score: "4.5",
+    count: "349",
+    cost: "79.90"
+  },
+  {
+    title: "Crypto Condensed: The Complete Guide To Bitcoin",
+    image: 'https://img-c.udemycdn.com/course/100x100/380970_b5b4_42.jpg',
+    totalHour: "7",
+    updateTime: "2024/2",
+    score: "4.3",
+    count: "31,356",
+    cost: "149.90"
+  },
+  {
+    title: "Crypto Condensed: Certified Bitcoin Professional Exam Guide",
+    image: "https://img-c.udemycdn.com/course/100x100/1079760_4678_4.jpg",
+    totalHour: "2.5",
+    updateTime: "2023/6",
+    score: "4.4",
+    count: "8,586",
+    cost: "74.90"
+  },
+  {
+    title: "Blockchain and Bitcoin Fundamentals",
+    image: "https://img-c.udemycdn.com/course/100x100/1151036_64b6_6.jpg",
+    totalHour: "3",
+    updateTime: "2025/4",
+    score: "4.6",
+    count: "132,836",
+    cost: "229.90",
+    isHot: true
+  },
+  {
+    title: "Bitcoin Blueprint - Your Guide to Launch Bitcoin Website",
+    image: "https://img-c.udemycdn.com/course/100x100/1218896_66ce.jpg",
+    totalHour: "3",
+    updateTime: "2018/7",
+    score: "4.3",
+    count: "3,065",
+    cost: "79.90"
+  },
+  {
+    title: "Start & Secure Your Bitcoin Fortune: Join The Revolution",
+    image: "https://img-c.udemycdn.com/course/100x100/1273050_4113.jpg",
+    totalHour: "2.5",
+    updateTime: "2020/2",
+    score: "4.6",
+    count: "1,807",
+    cost: "74.90"
+  },
+  {
+    title: "Bitcoin & Ethereum CryptoCurrency Course (2 Course Bundle)",
+    image: "https://img-c.udemycdn.com/course/100x100/1276364_feab_4.jpg",
+    totalHour: "7.5",
+    updateTime: "2024/12",
+    score: "4.5",
+    count: "14,435",
+    cost: "74.90"
+  },
+  {
+    title: "The 2022 Affiliate Marketing Course For Fun And Profit",
+    image: "https://img-c.udemycdn.com/course/100x100/1347396_e6be_7.jpg",
+    totalHour: "5",
+    updateTime: "2022/2",
+    score: "4.5",
+    count: "2,056",
+    cost: "79.90",
+    isBest: true,
+  },
+  {
+    title: "Bitcoin Investing, Get Savings And Discounts - Introduction",
+    image: "https://img-c.udemycdn.com/course/100x100/1349968_d0e3_5.jpg",
+    totalHour: "1",
+    updateTime: "2025/3",
+    score: "4.7",
+    count: "254",
+    cost: "84.90"
+  },
+  {
+    title: "Bitcoin Advanced Level: Transactions",
+    image: "https://img-c.udemycdn.com/course/100x100/1413060_e8d6.jpg",
+    totalHour: "1.5",
+    updateTime: "2025/4",
+    score: "4.8",
+    count: "5,893",
+    cost: "79.90"
+  },
+  {
+    title: "Bitcoin and CryptoCurrency Jump Start Course",
+    image: "https://img-c.udemycdn.com/course/100x100/1416552_36db_2.jpg",
+    totalHour: "1.5",
+    updateTime: "2018/10",
+    score: "4.5",
+    count: "3,042",
+    cost: "74.90"
+  },
+  {
+    title: "Bitcoin & Blockchain for Beginners",
+    image: "https://img-c.udemycdn.com/course/100x100/1418956_65b9.jpg",
+    totalHour: "2",
+    updateTime: "2019/6",
+    score: "4.2",
+    count: "3,650",
+    cost: "84.90"
+  },
+  {
+    title: "Bitcoin For Beginners Crash Course: Buy & Trade Bitcoin",
+    image: "https://img-c.udemycdn.com/course/100x100/1419424_c446.jpg",
+    totalHour: "1",
+    updateTime: "2019/12",
+    score: "4.4",
+    count: "1,699",
+    cost: "74.90"
+  },
+  {
+    title: "Bitcoin Trading Robot - Cryptocurrency Never Losing Formula",
+    image: "https://img-c.udemycdn.com/course/100x100/1422012_a363_13.jpg",
+    totalHour: "3",
+    updateTime: "2023/4",
+    score: "4.3",
+    count: "8,056",
+    cost: "84.90"
+  },
+  {
+    title: "Short Selling: Sell Bitcoin Before The Fall (8+ Hours)",
+    image: "https://img-c.udemycdn.com/course/100x100/1433814_0753_3.jpg",
+    totalHour: "8",
+    updateTime: "2024/12",
+    score: "4.3",
+    count: "7,042",
+    cost: "79.90"
+  },
+  {
+    title: "The Complete Guide to Bitcoin and Other Cryptocurrency",
+    image: "https://img-c.udemycdn.com/course/100x100/1513220_e10a_2.jpg",
+    totalHour: "5.5",
+    updateTime: "2019/11",
+    score: "4.7",
+    count: "756",
+    cost: "74.90"
+  },
+  {
+    title: "Bitcoin Trading Masterclass: The Complete Bitcoin Course",
+    image: "https://img-c.udemycdn.com/course/100x100/1533908_aefd.jpg",
+    totalHour: "4.5",
+    updateTime: "2018/10",
+    score: "4.3",
+    count: "6,454",
+    cost: "79.90"
+  },
+  {
+    title: "Bitcoin in 1 Hour | Send, Receive, Trade & Secure BTC | 2021",
+    image: "https://img-c.udemycdn.com/course/100x100/1596476_1c20_4.jpg",
+    totalHour: "1.5",
+    updateTime: "2021/9",
+    score: "4.8",
+    count: "85",
+    cost: "74.90"
+  }
+];
+
+export const commenList = [
+  {
+    "author": "Fabrizio G.",
+    "score": 3,
+    "time": "2 年前",
+    "comment": "Spiegazione elementare dell'uso di Coinbase.Probabilmente la cosa più fastidiosa è che tutte le risorse \"scaricabili\" fanno riferimento a pseudo bonus o referral cosa alquanto antipatica ritengo."
+  },
+  {
+    "author": "Paolo S.",
+    "score": 5,
+    "time": "3 年前",
+    "comment": "Bene! ottima spiegazione, avevo già una buona conoscenza, così è stata approfondita e, sempre a portata di mano la rinfrescata."
+  },
+  {
+    "author": "Andrea R.",
+    "score": 4,
+    "time": "3 年前",
+    "comment": "ero gia a conoscenza dell'uso di coinbase ma una rinfrescata fa sempre bene"
+  },
+  {
+    "author": "Ivan G.",
+    "score": 5,
+    "time": "3 年前",
+    "comment": "Molto positiva, avendo anche COINBASE come exchange, mi ha fatto capire che effettivamente ncome fee non è molto conveniente, interessante anche il discorso della cassaforte, penso che il discorso di..."
+  }
+];
+
+export const lessonsMore = [
+  {
+    "title": "Bitcoin Trading Bot Robot Strong and Easy Money",
+    "author": "ACI69 Trading, ACI69 | Trading ™",
+    "image": "https://img-c.udemycdn.com/course/480x270/3894936_1a8c_2.jpg",
+    "score": 4.1,
+    "scoredCount": 22,
+    "totalTime": "2.5小时",
+    "lessonsCount": 27,
+    "level": "中级",
+    "cost": "RM79.90"
+  },
+  {
+    "title": "Amazon Power: How To Get Free Products Online?",
+    "author": "ACI69 | Trading ™, ACI69 Trading",
+    "image": "https://img-c.udemycdn.com/course/480x270/2657286_2d98_4.jpg",
+    "score": 3.7,
+    "scoredCount": 35,
+    "totalTime": "3.5小时",
+    "lessonsCount": 27,
+    "level": "所有级别",
+    "cost": "RM84.90"
+  },
+  {
+    "title": "Bitcoin corso di TRADING Semplice™ Parte 1",
+    "author": "ACI69 Trading, ACI69 | Trading ™",
+    "image": "https://img-c.udemycdn.com/course/480x270/3910744_6efe_10.jpg",
+    "score": 4.7,
+    "scoredCount": 229,
+    "totalTime": "7.5小时",
+    "lessonsCount": 48,
+    "level": "中级",
+    "cost": "RM74.90"
+  }
+];

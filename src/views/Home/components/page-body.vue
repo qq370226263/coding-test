@@ -6,6 +6,11 @@
       <CourseContent/>
       <Require />
       <CourseDescripion/>
+      <OtherLessons />
+      <Teacher/>
+      <Comment/>
+      <lessonMore/>
+      <Report/>
     </div>
   </div>
 </template>
@@ -15,6 +20,11 @@ import ToOtherTheme from './to-other-theme.vue';
 import CourseContent from './course-content.vue';
 import Require from './require.vue';
 import CourseDescripion from './course-descripion.vue';
+import OtherLessons from './other-lessons.vue';
+import Teacher from './teacher.vue';
+import Comment from './comment.vue';
+import lessonMore from './lesson-more.vue';
+import Report from './report.vue';
 </script>
 <style lang="less" scoped>
 .page-body-section {
