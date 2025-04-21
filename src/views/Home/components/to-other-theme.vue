@@ -1,5 +1,5 @@
 <template>
-  <div class="to-other-theme section">
+  <div class="to-other-theme section mb-32">
     <div class="section-title">浏览相关主题</div>
     <div class="btns-content">
       <div class="btn-outline btn-mid">比特币</div>

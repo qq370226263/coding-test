@@ -11,7 +11,7 @@
 </template>
 <script setup>
 import WhatWillLearn from './what-will-learn.vue';
-import ToOtherTheme from './toOtherTheme.vue';
+import ToOtherTheme from './to-other-theme.vue';
 import CourseContent from './course-content.vue';
 import Require from './require.vue';
 import CourseDescripion from './course-descripion.vue';
