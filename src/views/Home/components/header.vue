@@ -22,7 +22,9 @@
       <div class="mid-btn tooltip-content">探索</div>
       <div class="search-content">
         <div class="search-input-content">
-          <SearchOutlined />
+          <div class="search-icon mid-ten">
+            <SearchOutlined />
+          </div>
           <input class="search-input" placeholder="查找装甲课程，提升职业生涯"/>
         </div>
       </div>
@@ -123,9 +125,45 @@ import { GlobalOutlined, SearchOutlined, ShoppingCartOutlined, CloseOutlined } f
   font-weight: 700;
   background-color: #6d28d2;
   width: 8rem;
+  &:hover {
+    background-color: #892de1;
+    color: #fff;
+  }
 }
 
 .search-content {
   flex: 1;
+  height: 4.8rem;
+  border: 1px solid #9194ac;
+  border-radius: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
+.search-icon {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+.search-input-content {
+  display: flex;
+  // flex-direction: col;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.search-input {
+  width: 100%;
+  flex: 1;
+  width: 100%;
+  border: none;
+  margin-right: 2rem;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
 </style>
