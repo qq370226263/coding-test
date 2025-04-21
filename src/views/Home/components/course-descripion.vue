@@ -1,0 +1,121 @@
+<template>
+  <div class="section-title">
+    描述
+  </div>
+  <div :class="['show-more-content', {'hide': showMore}]">
+    <p>
+      Come funziona Coinbase per comprare Bitcoin ed altre criptovalute per guadagnarci?
+    </p>
+    <p>
+      Guarda in questa serie di Tutorial come funziona Coinbase per comprare, vendere e trasferire criptovalute.
+    </p>
+    <p>
+      Guarda anche come guadagnare con Coinbase Criprovalute con Coinbase Earn: te lo spiego in maniera semplice.
+    </p>
+    <p>
+      Coinbase è un ottimo modo facile per iniziare con le criptovalute quindi se ti va iscriviti a questo corso e segui le semplici lezioni.
+    </p>
+    <p>
+      All'interno del corso troverai anche un invito per guadagnare e ti insegnerò anche come generare il tuo invito personale.
+    </p>
+    <p>
+      Ecco gli argomenti che vedrai in questo corso su Coinbase:
+    </p>
+    <p>
+      Introduzione: cosa è ed a cosa serve Coinbase?
+    </p>
+    <p>
+      Come Ti Registri Gratis Passo Passo a Coinbase?
+    </p>
+    <p>
+      Ecco I Documenti E Dati Che Ti Verranno Richiesti Al Momento Della Tua Registrazione: Come Devi Fare Passo Passo?
+    </p>
+    <p>
+      Guarda La Panoramica delle Funzionalita Iniziali Di Coinbase...
+    </p>
+    <p>
+      Cosa Vedrai Appena Entrato In Coinbase?
+    </p>
+    <p>
+      Carta Di Credito Prepagata Visa Ecco Come Richiederla In Coinbase?
+    </p>
+    <p>
+      PAC: Piano Di Accumulo E Portafoglio Crypto In Coinbase
+    </p>
+    <p>
+      Nella Pratica Come Si Fa Con Gli  Acquisti Programmati E Piani Di Accumulo In Coinbase?
+    </p>
+    <p>
+      Acquisto Cripto Con Conti Corrente, IBAN, Bonifici o Carte Prepagate: Come Si Fa?
+    </p>
+    <p>
+      Funzionalità Della Scheda Prezzi In Coibase: Cosa Ci Puoi Fare?
+    </p>
+    <p>
+      Come Si Trasferiscono Criptovalute Da Coinbase Ad Altri Wallet Esterni?
+    </p>
+    <p>
+      Come Si Ricevono Cryptovalute da altri wallet esterni al tuo Wallet Coinbase?
+    </p>
+    <p>
+      Cassaforte Coinbase: Cosa è E Cosa Ci Puoi Fare?
+    </p>
+    <p>
+      Ci vediamo dall'altra parte, iscriviti per non commettere gli errori che il 90% fa sempre quando inizia con Coinbase.
+    </p>
+    <p>
+      Ci vediamo dall'altra parte nella prima lezione!
+    </p>
+    <p>
+      此课程面向哪些人：
+    </p>
+    <p>
+      Chiunque Voglia Imparare A Utilizzare Coinbase Senza Stress
+    </p>
+    <p>
+      Chiunque Voglia Imparare Il Metodo Più Facile Per Comprare BITCOIN
+    </p>
+    <p>
+      Chiunque Voglia Imparare Il Metodo Più Facile Per Comprare Altre Cirptovalute
+    </p>
+  </div>
+  <button class="show-more-toggle btn-mid btn-ghost" @click="showMoreToggle">
+    <span>
+      {{ showMore ? '显示更少' : '显示更多' }}
+    </span>
+    <DownOutlined :class="[{'show-more': showMore}]"/>
+  </button>
+</template>
+<script setup>
+import { ref } from 'vue';
+import {
+  DownOutlined
+} from '@ant-design/icons-vue';
+const showMore = ref(false);
+function showMoreToggle () {
+  showMore.value = !showMore.value
+}
+</script>
+<style lang="less" scoped>
+.show-more-content {
+  overflow: hidden;
+  line-height: 2.5;
+  &.hide {
+    max-height: 22.1rem;
+    mask-image: linear-gradient(#fff, #fff, rgba(255,255,255, 0));
+  }
+}
+.show-more-toggle {
+  color: #6d28d2;
+  .show-more {
+    transform: rotate(180deg);
+  }
+  :deep(.anticon) {
+    padding: 0.8rem;
+    svg {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+}
+</style>

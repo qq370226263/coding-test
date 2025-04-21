@@ -125,3 +125,120 @@ export const footerConfig = [
     }]
   }
 ]
+
+export const courseList = [
+  {
+    title: "INTRODUZIONE A COINBASE Per Comprare BITCOIN",
+    totalTime: 896, // 271 + 97 + 137 + 391
+    isToggle: true,
+    list: [
+      { content: "Introduzione", time: 271 },
+      { content: "IMPORTANTE Guarda Prima Di Andare Avanti, Grazie...", time: 97 },
+      { content: "Invite Per Studenti Al Gruppo Telegram ACI69", time: 137 },
+      { content: "Vantaggi Per Studenti ACI69", time: 391 }
+    ]
+  },
+  {
+    title: "COME CI SI REGISTRA GRATIS A COINBASE IN ITALIANO?",
+    totalTime: 592, // 424 + 168
+    isToggle: true,
+    list: [
+      { content: "IMPORTANTE: Come Ti Registri Gratis Su Coinbase? Guardalo Passo Passo", time: 424 },
+      { content: "Documenti e Dati Richiesti Da Coinbase: Come Devi Fare?", time: 168 }
+    ]
+  },
+  {
+    title: "COINBASE EARN COME SI GUADAGNA E COME FUNZIONA?",
+    totalTime: 531, // 531
+    isToggle: true,
+    list: [
+      { content: "Coinbase Earn Guadagna Bitcoin E Cripto Gratis Come Funziona?", time: 531 }
+    ]
+  },
+  {
+    title: "FUNZIONALITA' BASE COINBASE",
+    totalTime: 2293, // 285 + 383 + 1027 + 196 + 402
+    isToggle: true,
+    list: [
+      { content: "Panoramica Delle Funzionalita Iniziali Di Coinbase", time: 285 },
+      { content: "Cosa Vedrai Appena Entrato In Coinbase?", time: 383 },
+      { content: "Bonifico SEPA Immediato Verso Coinbase Come Si Fa?", time: 1027 },
+      { content: "Carta Di Credito Visa Coinbase: Come Richiederla? Piano Di Accumulo Cryptovalute", time: 196 },
+      { content: "Acquisti Programmati E PAC Piani Di Accumulo Criptovalute: Come Fare?", time: 402 }
+    ]
+  },
+  {
+    title: "COME SI ACQUISTANO BITCOIN E ALTRE CRIPTOVALUTE IN COINBASE?",
+    totalTime: 560, // 208 + 352
+    isToggle: true,
+    list: [
+      { content: "Prepagate e Acquisto Cripto Con Conti Corrente: Come Si Fa Su CoinBase?", time: 208 },
+      { content: "La Scheda Prezzi E Tutte Le Sue Funzionalità", time: 352 }
+    ]
+  },
+  {
+    title: "COME SI INVIANO BITCOIN (E ALTRE CRIPTO) DA COINBASE AD ALTRI WALLET?",
+    totalTime: 362, // 362
+    isToggle: true,
+    list: [
+      { content: "Come Trasferisci Cripto DA Coinbase A Wallet Esterni?", time: 362 }
+    ]
+  },
+  {
+    title: "COME SI RICEVONO BITCOIN (E ALTRE CRIPTO) SUL TUO WALLET COINBASE?",
+    totalTime: 258, // 258
+    isToggle: true,
+    list: [
+      { content: "Come Ricevere Criptovalute Sul Tuo Wallet Coinbase?", time: 258 }
+    ]
+  },
+  {
+    title: "CASSAFORTE IN COINBASE: QUALI SONO VANTAGGI E SVANTAGGI?",
+    totalTime: 258, // 258
+    isToggle: true,
+    list: [
+      { content: "CASSAFORTE in Coinbase: Vantaggi e Svantaggi", time: 258 }
+    ]
+  },
+  {
+    title: "NOTIFICHE SUI PREZZI IN COINBASE",
+    totalTime: 137, // 137
+    isToggle: true,
+    list: [
+      { content: "Notifiche Sui Prezzi in Coinbase Cosa Sono e a Cosa Servono?", time: 137 }
+    ]
+  },
+  {
+    title: "APP MOBILE COINBASE E COME SI DISATTIVANO LE NOTIFICHE SULL'APP?",
+    totalTime: 265, // 265
+    isToggle: true,
+    list: [
+      { content: "App Mobile Coinbase E Come Si Disattivano Le Notifiche Sull'App?", time: 265 }
+    ]
+  },
+  {
+    title: "ANCORA SU EARN (GUADAGNI)",
+    totalTime: 458, // 458
+    isToggle: true,
+    list: [
+      { content: "Altri Guadagni con Coinbase Earn", time: 458 }
+    ]
+  },
+  {
+    title: "AIUTO ASSISTENZA E RISOLUZIONE PROBLEMI SU COINBASE",
+    totalTime: 253, // 253
+    isToggle: true,
+    list: [
+      { content: "Come Contattare Assistenza Coinbase e Risolvere i Tuoi Problemi?", time: 253 }
+    ]
+  },
+  {
+    title: "NON PERDERE IL BONUS PER TE GUARDA",
+    totalTime: 769, // 107 + 662
+    isToggle: true,
+    list: [
+      { content: "Bonus Apri", time: 107 },
+      { content: "Guarda Qui La Lezione Bonus Per Te", time: 662 }
+    ]
+  }
+]

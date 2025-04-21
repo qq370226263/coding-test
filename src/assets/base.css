@@ -68,6 +68,9 @@ b {
 }
 ul {
   padding: 0;
+  li {
+    list-style: none;
+  }
 }
 input {
   border: none;
@@ -75,6 +78,10 @@ input {
   &:focus-visible {
     outline: none;
   }
+}
+button {
+  background-color: #fff;
+  
 }
 
 /* body {
